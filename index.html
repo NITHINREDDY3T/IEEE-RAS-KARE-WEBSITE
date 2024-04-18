@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE RAS Student Chapter - KARE</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap">
+    <script src="https://kit.fontawesome.com/0342502787.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #f3f3f3;
+        }
+
+        nav {
+            background-color: #3a618b;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ffdc34;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ffdc34;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom right;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        .sub-heading {
+            cursor: pointer;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .sub-heading:hover {
+            color: #007bff;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffdc34;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Additional Styles */
+        .content {
+            line-height: 1.8;
+        }
+
+        .section-title {
+            color:  #060809;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .icon {
+            font-size: 32px;
+            margin-right: 10px;
+            color: #4f5693;;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Custom Animations */
+        .fade-in-up {
+            animation: fadeInUp 1s ease;
+        }
+
+        .fade-in-down {
+            animation: fadeInDown 1s ease;
+        }
+
+        .slide-in-down {
+            animation: slideInDown 1s ease;
+        }
+    </style>
+</head>
+<body>
+<header class="fade-in-down">
+    <img src="https://kalasalingam.ac.in/wp-content/uploads/2022/02/Logo.png" alt="KARE Logo" class="logo">
+    <h1>IEEE RAS Student Chapter - KARE</h1>
+    <img src="https://www.ieee-ras.org/images/files/template/ieee-ras-logo.png" alt="IEEE RAS Logo" class="logo">
+</header>
+
+<nav class="slide-in-down">
+    <a href="#objectives">Objectives</a>
+    <a href="#vision-mission">Vision & Mission</a>
+    <a href="#counselor">Counselor Details</a>
+    <a href="members.html">Members</a>
+    <a href="#events">Event Calendar</a>
+    <a href="#about-kare">About KARE</a>
+    <a href="#about-ieee-ras">About IEEE RAS</a>
+</nav>
+
+<section id="objectives" class="fade-in-up">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-bullseye icon"></i> Objectives</h2>
+        <ul>
+            <li>Foster a passion for robotics and automation among students</li>
+            <li>Encourage innovative thinking and problem-solving skills</li>
+            <li>Facilitate knowledge sharing and collaboration with industry leaders</li>
+        </ul>
+    </div>
+</section>
+
+<section id="vision-mission" class="fade-in-up">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-eye icon"></i> Vision & Mission</h2>
+        <h3 class="sub-heading" id="vision-heading">Vision</h3>
+        <p class="content">To be a leading hub for robotics and automation education, research, and innovation, empowering students to shape the future of intelligent systems.</p>
+        <h3 class="sub-heading" id="mission-heading">Mission</h3>
+        <p class="content">Our mission is to provide a dynamic platform for students to explore the exciting realms of robotics and automation. We aim to equip them with cutting-edge knowledge, practical skills, and a collaborative environment to drive technological advancements that positively impact society.</p>
+    </div>
+</section>
+
+<section id="counselor" class="fade-in-up">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-user-tie icon"></i> Counselor Details</h2>
+        <p>
+            Dr. R. Raja Subramanian<br>
+            Counsellor, IEEE RAS KARE Student Chapter<br>
+            Associate Professor and Associate HoD,<br>
+            Department of Computer Science and Engineering,<br>
+            Kalasalingam Academy of Research and Education
+        </p>
+    </div>
+</section>
+
+<section id="about-kare" class="fade-in-up">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-info-circle icon"></i> About KARE</h2>
+        <p>Kalasalingam Academy of Research and Education (KARE) is a renowned institution dedicated to excellence in education and research. Established with a vision to nurture intellectual capital, KARE provides a conducive environment for students to explore their passions and contribute to society's progress.</p>
+    </div>
+</section>
+
+<section id="about-ieee-ras" class="fade-in-up">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-robot icon"></i> About IEEE RAS</h2>
+        <p>The IEEE Robotics and Automation Society (RAS) is a prominent global organization that promotes the theory and practice of robotics and automation technologies. RAS fosters collaboration, knowledge exchange, and professional development among researchers, educators, and practitioners in these rapidly evolving fields.</p>
+        <p>By forming the IEEE RAS Student Branch Chapter at KARE, we aim to leverage the society's vast resources, connect with a global network of experts, and actively participate in shaping the future of robotics and automation. This chapter will serve as a stepping stone for our students to gain invaluable exposure, enhance their skills, and contribute to cutting-edge innovations in these dynamic domains.</p>
+    </div>
+</section>
+
+<footer class="fade-in-up">
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/kare" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kare" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="contact-info">
+        <div>Email: kareieeeras@org</div>
+        <div>Phone: +91 99</div>
+    </div>
+    <div>&copy; 2024 IEEE RAS Student Chapter - KARE </div>
+</footer>
+
+<script>
+    // Smooth scrolling animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Additional animations for sub-headings
+    const headings = document.querySelectorAll('.sub-heading');
+
+    headings.forEach(heading => {
+        heading.addEventListener('mouseover', () => {
+            heading.style.transform = 'scale(1.1)';
+        });
+
+        heading.addEventListener('mouseout', () => {
+            heading.style.transform = 'scale(1)';
+        });
+    });
+</script>
+</body>
+</html>
